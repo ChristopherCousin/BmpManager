@@ -1,9 +1,9 @@
 #include "pch.h"
 #include <iostream>
-#include<fstream>
-#include<conio.h>
-#include<string.h>
-#include<math.h>
+#include <fstream>
+#include <conio.h>
+#include <string.h>
+#include <math.h>
 
 using namespace std;
 
@@ -28,18 +28,26 @@ int main() {
 	in.open(infile, ios::in | ios::binary);
 	out.open(outfile, ios::out | ios::binary);
 
-	//Copiar cabezera
+	//Copiar cabecera
 	in.read((char *)(&Header), sizeof(Header));
 	out.write((char *)(&Header), sizeof(Header));
 
-	//Tamaño imagen
+	//Usamos la funcion seekg para ir a la posicion de offset del
+	//bmp 18 que es el width en pixeles de la imagen
 	in.seekg(0x0012);
 	in.read((char *)&width, 4);
-	in.read((char *)&height, 4); //0x0016
 
-	in.seekg(0x0036); //Ir directamente a la tabla de colores (Saltar cabezera)
+	//Ahora vamos a la posicion del height
+	in.seekg(0x0016);
+	in.read((char *)&height, 4);
 
-	//Ejecutar mientras el archivo tenga contenido
+	cout << "Height: " << height << endl;
+	cout << "Width: " << width << endl;
+
+	//Ahora nos posicionamos de la tabla de colores
+	in.seekg(0x0036);
+
+	//Mientras no llegue al final
 	while (!in.eof()) {
 		in.read((char *)(&pixel), sizeof(pixel)); //Lee la composición del color (r, g, b)
 		char grayColor = (pixel.b, pixel.g, pixel.r); //Variable que establece el color en 8 bits

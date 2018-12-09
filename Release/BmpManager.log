@@ -1,0 +1,23 @@
+﻿  BmpManager.cpp
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(19): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(19): error C2146: error de sintaxis: falta ';' delante del identificador 'in'
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(20): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(20): error C2146: error de sintaxis: falta ';' delante del identificador 'out'
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(27): error C2065: 'in': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(27): error C2653: 'ios': no es un nombre de clase o espacio de nombres
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(27): error C2065: 'binary': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(28): error C2065: 'out': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(28): error C2653: 'ios': no es un nombre de clase o espacio de nombres
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(28): error C2065: 'binary': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(31): error C2065: 'in': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(32): error C2065: 'out': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(36): error C2065: 'in': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(37): error C2065: 'in': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(40): error C2065: 'in': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(41): error C2065: 'in': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(44): error C2065: 'in': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(47): error C2065: 'in': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(48): error C2065: 'in': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(50): error C2065: 'out': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(52): error C2065: 'in': identificador no declarado
+c:\users\admin\source\repos\bmpmanager\bmpmanager\bmpmanager.cpp(53): error C2065: 'out': identificador no declarado
