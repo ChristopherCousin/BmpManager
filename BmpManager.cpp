@@ -42,7 +42,7 @@ int main() {
 	//Ejecutar mientras el archivo tenga contenido
 	while (!in.eof()) {
 		in.read((char *)(&pixel), sizeof(pixel)); //Lee la composición del color (r, g, b)
-		char grayColor = (pixel.b, pixel.g, pixel.r); //Establece el color en 8 bits
+		char grayColor = (pixel.b, pixel.g, pixel.r); //Variable que establece el color en 8 bits
 		out << grayColor << grayColor << grayColor; //Asigna el nuevo color a r, g, b
 	}
 	in.close();
